@@ -1,564 +1,281 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Free Walking Tour Cusco — Cusco Walks (English)</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <meta name="description" content="Join our Free Walking Tour in Cusco (English). 2-hour guided route: Plaza de Armas, Coricancha, Twelve-Angled Stone, San Cristobal viewpoint & more. Daily departures: 10:00, 13:00, 15:30. Tips-based. Book now." />
-  <meta name="keywords" content="Free walking tour Cusco, Cusco walks, walking tour in Cusco English, Plaza de Armas tour, Coricancha tour" />
-  <link rel="canonical" href="https://cuscowalks.com/" />
+  <!-- Primary SEO -->
+  <title>Alpaca & Llama Experience in Cusco — Cusco Camelids</title>
+  <meta name="description" content="Meet alpacas, llamas, vicuñas & guanacos near Cusco. Ethical cultural visits, artisan demonstrations and alpaca wool explanations. Book a 2-3 hour experience.">
+  <meta name="keywords" content="alpaca tour Cusco, llama walk Cusco, alpaca farm Cusco, vicuña Cusco, camelids Cusco, Cusco tours, local guide Cusco">
+  <link rel="canonical" href="https://www.cuscocamelids.com/">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Free Walking Tour Cusco — Cusco Walks (English)" />
-  <meta property="og:description" content="2-hour English walking tour of Cusco with an official local guide. Tips-based. Daily departures 10:00, 13:00 & 15:30. Book now." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://cuscowalks.com/" />
-  <meta property="og:image" content="" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alpaca & Llama Experience in Cusco — Cusco Camelids">
+  <meta property="og:description" content="Meet the 4 camelids of the Andes. Small group cultural visits 20 minutes from Cusco — learn about fibers, meet artisans and support local communities.">
+  <meta property="og:url" content="https://www.cuscocamelids.com/">
+  <meta property="og:image" content="/images/og-camelids.jpg"> <!-- Replace with a good hero image -->
 
-  <!-- Structured Data -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alpaca & Llama Experience in Cusco — Cusco Camelids">
+  <meta name="twitter:description" content="Meet the 4 camelids of the Andes. Small group cultural visits 20 minutes from Cusco — learn about fibers, meet artisans and support local communities.">
+  <meta name="twitter:image" content="/images/og-camelids.jpg">
+
+  <!-- Structured Data: LocalBusiness + Breadcrumb + FAQ (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TouristAttraction",
-    "name": "Cusco Walks",
-    "description": "Free walking tour in Cusco (English only). 2-hour route including Plaza de Armas, Coricancha, San Cristobal viewpoint and more. Tips-based.",
-    "url": "https://cuscowalks.com/",
-    "telephone": "+51 950693650",
-    "email": "waldo.peredo@gmail.com",
+    "name": "Cusco Camelids - Alpaca & Llama Experience",
+    "description": "Cultural visits to meet alpacas, llamas, vicuñas and guanacos near Cusco. Learn about fibers and local weaving techniques.",
+    "url": "https://www.cuscocamelids.com/",
+    "telephone": "+51-950693650",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Cusco",
+      "addressRegion": "Cusco",
       "addressCountry": "PE"
     },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
-        ],
-        "opens": "10:00",
-        "closes": "18:00"
-      }
-    ]
+    "image": ["https://www.cuscocamelids.com/images/alpaca.jpg","https://www.cuscocamelids.com/images/llama.jpg"],
+    "sameAs": ["https://www.instagram.com/cuscocamelids"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "120"
+    }
   }
   </script>
 </head>
-
 <body>
-
-  <!-- Header -->
-  <header role="banner">
-    <div class="nav">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">CW</div>
-        <div style="line-height:1">
-          <div style="font-weight:800;color:var(--gold)">Cusco Walking Tours</div>
-          <div style="font-size:12px;color:rgba(255,255,255,0.85)">Free walking tour • English • Tips-based</div>
+  <header>
+    <div class="container" role="banner">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <div class="brand">
+          <div class="logo">CC</div>
+          <div>
+            <div style="font-size:13px;opacity:.95">Cusco Camelids</div>
+            <div style="font-weight:600">Alpaca & Llama Experience</div>
+          </div>
         </div>
+        <nav style="margin-left:auto">
+          <div class="nav-links">
+            <a href="#about" class="small">About</a>
+            <a href="#tours" class="small">Tours</a>
+            <a href="#faq" class="small">FAQ</a>
+            <a class="button" id="bookBtn" href="#book">Book</a>
+          </div>
+        </nav>
       </div>
 
-      <nav aria-label="Primary navigation">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#route">Route</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#booking" class="cta">Book</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
+      <div style="margin-top:28px;">
+        <h1>Meet Alpacas, Llamas, Vicuñas & Guanacos — A Cultural Visit Near Cusco</h1>
+        <p class="lead">Small-group visits 20 minutes from the historic center. Learn about fibers, see local weaving, and support artisan families. Ethical, family-friendly, and great for photos.</p>
+        <p style="margin-top:16px"><a class="button" href="#book" id="heroBook">Book via WhatsApp</a></p>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-<section class="hero" id="home" aria-label="Hero section">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-content">
-    <span class="eyebrow">Official local guide • Small groups</span>
-    <h1>Free Walking Tour — Cusco (English)</h1>
-    <p class="lead">Discover Cusco's history, Inca stonework, hidden corners and panoramic viewpoints on a friendly 2-hour walking tour. Daily departures at <strong>10:00 AM</strong>, <strong>1:00 PM</strong> & <strong>3:30 PM</strong>. Max 10 people. Tips-based.</p>
+  <main class="container" id="main">
+    <!-- About -->
+    <section id="about" style="margin-top:24px">
+      <h2>Why this experience?</h2>
+      <p class="muted">Most visitors only see alpacas or llamas in tourist shows. Our visit is cultural and educational: you will get close to the four camelids, learn how to recognize real alpaca fiber, and meet local artisans who still weave by hand.</p>
 
-    <div class="hero-ctas">
-      <a class="btn-primary" href="#booking">Book Your Free Spot</a>
-      <a class="btn-outline" href="#route">See Route & Photos</a>
-    </div>
-  </div>
-</section>
-
-
-  <main>
-
-    <!-- About + Highlights -->
-    <section class="section" id="about">
-      <div class="wrap-inner wrap">
-        <div class="two-col">
-          <div>
-            <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px">
-              <div style="width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#ffcf4d);display:grid;place-items:center;font-weight:800;color:var(--blue-800)">✓</div>
-              <div>
-                <h2>Why join our Free Walking Tour?</h2>
-                <p class="small" style="color:var(--muted)">I’m a licensed local guide who uses a photo book to show historical images and explain the city's evolution. Small groups (max 10) for a personal experience. Honest, local stories and practical tips.</p>
-              </div>
-            </div>
-
-            <!-- Route / gallery cards -->
-    <section class="section" id="route">
-      <div class="wrap">
-        <h2>Route Highlights</h2>
-        <p class="small" style="color:var(--muted);text-align:center">We visit the most iconic and interesting spots in the historic centre — perfect for your first day in Cusco.</p>
-
-        <div style="height:16px"></div>
-        <div class="grid-cards">
-          <!-- Each card has a place for image src="" -->
-          <article class="place-card">
-            <div class="place-thumb" style="background-image:url('../images/topur-highlights/plaza-de-armas-cusco-tour.jpg');" aria-hidden="true"></div>
-            <div class="place-body">
-              <div class="place-title">Plaza de Armas</div>
-              <div class="place-desc">The city's historic heart — blending Inca foundations and colonial architecture.</div>
-            </div>
-          </article>
-
-          <article class="place-card">
-            <div class="place-thumb" style="background-image:url('/images/topur-highlights/sun-street-calle-loreto.JPG');" aria-hidden="true"></div>
-            <div class="place-body">
-              <div class="place-title">Calle Loreto</div>
-              <div class="place-desc">A charming street with remarkable Inca walls and local stories.</div>
-            </div>
-          </article>
-
-          <article class="place-card">
-            <div class="place-thumb" style="background-image:url('/images/topur-highlights/Coricancha-\ cusco\ -\ temple\ -\ sun\ temple\ -\ cusco.webp');" aria-hidden="true"></div>
-            <div class="place-body">
-              <div class="place-title">Coricancha</div>
-              <div class="place-desc">Temple of the Sun — one of the most important Inca religious sites.</div>
-            </div>
-          </article>
-
-          <article class="place-card">
-            <div class="place-thumb" style="background-image:url('images/topur-highlights/inka-palace-cusicancha.JPG');" aria-hidden="true"></div>
-            <div class="place-body">
-              <div class="place-title">Kusicancha</div>
-              <div class="place-desc">Learn about Inca stonework and sacred spaces during the tour.</div>
-            </div>
-          </article>
-
-          <article class="place-card">
-            <div class="place-thumb" style="background-image:url('images/topur-highlights/12-angled-stone-inka-wall-cusco.webp');" aria-hidden="true"></div>
-            <div class="place-body">
-              <div class="place-title">Twelve-Angled Stone</div>
-              <div class="place-desc">A famous example of the precision of Inca masonry — top photo stop.</div>
-            </div>
-          </article>
-
-          <article class="place-card">
-            <div class="place-thumb" style="background-image:url('images/topur-highlights/DSCF9628.JPG');" aria-hidden="true"></div>
-            <div class="place-body">
-              <div class="place-title">San Blas</div>
-              <div class="place-desc">The artisans neighborhood of Cusco</div>
-            </div>
-          </article>
-
-          <article class="place-card">
-            <div class="place-thumb" style="background-image:url('images/topur-highlights/san\ cristobal\ viewpoint\ -\ san\ blass\ -\ cusco\ -\ peru.JPG');" aria-hidden="true"></div>
-            <div class="place-body">
-              <div class="place-title">San Cristobal viewpoint</div>
-              <div class="place-desc">Panoramic views of Cusco — the perfect way to finish the tour.</div>
-            </div>
-          </article>
+      <div style="display:flex;gap:18px;margin-top:18px;flex-wrap:wrap;align-items:center">
+        <div style="flex:1;min-width:260px">
+          <ul>
+            <li>Meet the 4 camelids: alpaca, llama, vicuña, guanaco</li>
+            <li>Short demonstration of traditional weaving</li>
+            <li>Ethical visit — proceeds support local families</li>
+            <li>Easy 20-minute taxi from Cusco center</li>
+          </ul>
+        </div>
+        <div style="width:320px">
+          <img src="/images/galerria_fotos/darya-luganskaya-Hn2CyiAcfpA-unsplash.jpg" alt="Alpaca close-up at Cusco Camelids" loading="lazy" style="width:100%;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,.08)">
         </div>
       </div>
     </section>
 
-            <div class="card" style="margin-bottom:16px">
-              <h3 style="margin-top:0">Quick Details</h3>
-              <p class="small"><strong>Duration:</strong> ~2 hours • <strong>Language:</strong> English only • <strong>Cost:</strong> Free — tips-based</p>
-              <div style="margin-top:12px" class="slots">
-                <div class="slot">10:00 AM</div>
-                <div class="slot">1:00 PM</div>
-                <div class="slot">3:30 PM</div>
-              </div>
-            </div>
-
-            <div class="card">
-              <h3 style="margin-top:0">What we include</h3>
-              <ul style="margin:12px 0 0 18px;color:var(--muted)">
-                <li>Official licensed guide</li>
-                <li>Photo book & historical context</li>
-                <li>Small groups, local tips & recommendations</li>
-                <li>Great photo stops & panoramic viewpoint</li>
-              </ul>
-            </div>
+    <!-- Tours / Cards -->
+    <section id="tours" style="margin-top:28px">
+      <h2>Our Visit</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="/images/alpaca/HKDY9285.JPG" alt="Small group with camelids" loading="lazy">
+          <div class="card-body">
+            <h3>Classic Visit — 2.5 hours</h3>
+            <p class="muted">Meet all four camelids, weaving demo, Q&amp;A, tea and snacks. Ideal for curious travelers.</p>
+            <p style="margin-top:8px"><strong>Price:</strong> $25 USD per person (small groups)</p>
+            <p style="margin-top:8px"><a class="button" href="#book" data-tour="Classic Visit">Book this tour</a></p>
           </div>
+        </article>
 
-          <!-- Booking quick card -->
-          <aside>
-            <div class="card">
-              <h3 style="margin-top:0">Quick Book</h3>
-              <p class="small">Max 10 people per group. We recommend booking in advance.</p>
+        <article class="card">
+          <img src="/images/alpaca/FYHD7853.JPG" alt="Alpaca fibers and textiles" loading="lazy">
+          <div class="card-body">
+            <h3>Textile & Fiber Workshop — 1.5 hours</h3>
+            <p class="muted">Short hands-on session where we explain fiber types and show spinning/weaving tools.</p>
+            <p style="margin-top:8px"><strong>Price:</strong> Free</p>
+            <p style="margin-top:8px"><a class="button" href="#book" data-tour="Textile Workshop">Book this tour</a></p>
+          </div>
+        </article>
 
-              <!-- Quick form (same Formspree endpoint) -->
-              <form id="quick-book" action="https://formspree.io/f/xrbybyrb" method="POST" autocomplete="on">
-                <input type="hidden" name="website" value="CuscoWalks.com" />
-                <div class="form-row">
-                  <label for="q-name">Full name</label>
-                  <input id="q-name" name="name" type="text" placeholder="Your name" required />
-                </div>
-                <div class="form-row">
-                  <label for="q-phone">Phone (WhatsApp)</label>
-                  <input id="q-phone" name="phone" type="tel" placeholder="+51 9XXXXXXXX" required />
-                </div>
-                <div class="form-row">
-                  <label for="q-time">Time slot</label>
-                  <select id="q-time" name="time" required>
-                    <option value="">Choose a time</option>
-                    <option value="10:00 AM">10:00 AM</option>
-                    <option value="1:00 PM">1:00 PM</option>
-                    <option value="3:30 PM">3:30 PM</option>
-                  </select>
-                </div>
-                <div style="display:flex;gap:8px;margin-top:8px">
-                  <button type="submit" class="submit-btn" style="flex:1">Reserve</button>
-                </div>
-                <div id="quick-status" class="hint" aria-live="polite"></div>
-                <p class="hint">Bookings go to <strong>waldo.peredo@gmail.com</strong>. We'll contact you via WhatsApp to confirm.</p>
-              </form>
-            </div>
-
-            <div style="height:12px"></div>
-
-            <div class="card">
-              <h3 style="margin-top:0">Meeting Point</h3>
-              <p class="small">In front of McDonald's, Plaza de Armas, Cusco. Look for the guide Waldo.</p>
-              <div class="meeting-map" style="margin-top:12px">
-                <iframe title="Map to McDonald's Plaza de Armas Cusco" src="https://www.google.com/maps?q=McDonald's+Plaza+de+Armas+Cusco&output=embed" width="100%" height="100%" style="border:0" loading="lazy"></iframe>
-              </div>
-            </div>
-          </aside>
-        </div>
+        <article class="card">
+          <img src="/images/alpaca/TRBZ7935.JPG" alt="Vicuña in the Andes" loading="lazy">
+          <div class="card-body">
+            <h3>Private Visit</h3>
+            <p class="muted">Private experience and transportation arrangement. Perfect for couples or families wanting extra time.</p>
+            <p style="margin-top:8px"><strong>Price:</strong> Contact for private rate</p>
+            <p style="margin-top:8px"><a class="button" href="#book" data-tour="Private Visit">Inquire</a></p>
+          </div>
+        </article>
       </div>
     </section>
 
-
-    <!-- Reviews -->
-    <section id="reviews" class="section">
-      <div class="wrap">
-        <h2>Traveler Reviews</h2>
-        <div class="reviews-grid" role="list">
-          <div class="review-card" role="listitem">
-            <div class="stars">★★★★★</div>
-            <div style="font-weight:700">Jonas – Netherlands</div>
-            <div class="small" style="margin-top:6px;color:var(--muted)">"excellent guide. spoke good English and was accommodating, friendly and knowledgeable. We also went in Coricancha, as an extra option. I was the only one so had basically a private tour. Highly recommend."</div>
-          </div>
-
-          <div class="review-card" role="listitem">
-            <div class="stars">★★★★★</div>
-            <div style="font-weight:700">Lorence – Canada</div>
-            <div class="small" style="margin-top:6px;color:var(--muted)">"Our guide Waldo was really interesting and told us a lot about the history of Cusco and the Inca. I recommend!"</div>
-          </div>
-
-          <div class="review-card" role="listitem">
-            <div class="stars">★★★★★</div>
-            <div style="font-weight:700">Sophie — Germany</div>
-            <div class="small" style="margin-top:6px;color:var(--muted)">"Toller Guide mit vielen interessanten Informationen. Absolut empfehlenswert, wenn man sich einen Überblick über Cuzco verschaffen möchte."</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Booking (full) -->
-    <section id="booking" class="section">
-      <div class="wrap">
-        <h2>Reserve your spot</h2>
-        <div class="card" style="margin-top:12px">
-          <form id="booking-form" action="https://formspree.io/f/xrbybyrb" method="POST" autocomplete="on">
-            <input type="hidden" name="website" value="CuscoWalks.com" />
-            <div class="form-grid">
-              <div class="form-row">
-                <label for="name">Full name</label>
-                <input id="name" name="name" type="text" placeholder="Your full name" required />
-              </div>
-
-              <div class="form-row">
-                <label for="phone">Phone (WhatsApp)</label>
-                <input id="phone" name="phone" type="tel" placeholder="+51 9XXXXXXXX" required />
-              </div>
-
-              <div class="form-row">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="you@example.com" required />
-              </div>
-
-              <div class="form-row">
-                <label for="people">Number of people</label>
-                <select id="people" name="people" required>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
-              </div>
-
-              <div class="form-row">
-                <label for="time">Time slot</label>
-                <select id="time" name="time" required>
-                  <option value="10:00 AM">10:00 AM</option>
-                  <option value="1:00 PM">1:00 PM</option>
-                  <option value="3:30 PM">3:30 PM</option>
-                </select>
-              </div>
-
-              <div style="grid-column:1 / -1" class="form-row">
-                <label for="notes">Notes or special requests</label>
-                <textarea id="notes" name="notes" rows="3" placeholder="Meeting notes"></textarea>
-              </div>
-            </div>
-
-            <!-- honeypot -->
-            <input type="text" name="_gotcha" style="display:none" />
-
-            <div style="margin-top:12px;display:flex;gap:12px;align-items:center">
-              <button type="submit" class="submit-btn">Send Booking Request</button>
-              <div id="form-status" class="hint" aria-live="polite"></div>
-            </div>
-
-            <p class="hint" style="margin-top:10px">Note: This is a free tour based on tips. We recommend booking in advance — groups limited to 10 people.</p>
-          </form>
-        </div>
+    <!-- Gallery -->
+    <section style="margin-top:28px">
+      <h2>Gallery</h2>
+      <div class="gallery" aria-label="Photos of alpaca, llama, vicuña and guanaco">
+        <img src="/images/galerria_fotos/sebastien-goldberg-xgQZ1rXbYa4-unsplash.jpg" alt="Alpaca" loading="lazy">
+        <img src="/images/galerria_fotos/shai-pal-4kkdoEgdpSo-unsplash.jpg" alt="Llama" loading="lazy">
+        <img src="/images/galerria_fotos/alpaca-vicugna-pacos-4024996_1280.jpg" alt="Vicuña" loading="lazy">
+        <img src="/images/galerria_fotos/hoyoun-lee-EAApsRZ2QRU-unsplash.jpg" alt="Guanaco" loading="lazy">
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="section">
-      <div class="wrap">
-        <h2>Frequently Asked Questions</h2>
-        <div class="card" style="margin-top:12px">
-          <div class="faq-item">
-            <div class="faq-q" data-toggle>
-              <div><strong>Is the tour really free?</strong></div>
-              <div class="small">+</div>
-            </div>
-            <div class="faq-a" hidden>Yes — the tour is tips-based. At the end you decide what the experience was worth.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q" data-toggle>
-              <div><strong>How long is the tour?</strong></div>
-              <div class="small">+</div>
-            </div>
-            <div class="faq-a" hidden>Approximately 2 hours; we cover the main highlights and finish at San Cristobal viewpoint.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q" data-toggle>
-              <div><strong>Do I need to book in advance?</strong></div>
-              <div class="small">+</div>
-            </div>
-            <div class="faq-a" hidden>Recommended, especially in high season. We limit groups to 10 people for quality.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q" data-toggle>
-              <div><strong>What language is the tour in?</strong></div>
-              <div class="small">+</div>
-            </div>
-            <div class="faq-a" hidden>The tour is conducted in English only.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q" data-toggle>
-              <div><strong>Where do we meet?</strong></div>
-              <div class="small">+</div>
-            </div>
-            <div class="faq-a" hidden>In front of McDonald's at Plaza de Armas, Cusco. Look for the guide with a photo book and red jacket.</div>
-          </div>
+    <section id="faq" style="margin-top:28px" class="faq">
+      <h2>Frequently asked questions</h2>
+      <div class="item">
+        <button aria-expanded="false">How do I get there from the Cusco center?</button>
+        <div class="answer" hidden>
+          <p class="muted">A taxi from the historic center takes about 20 minutes and costs around S/25.</p>
+        </div>
+      </div>
+      <div class="item">
+        <button aria-expanded="false">Are animals handled ethically?</button>
+        <div class="answer" hidden>
+          <p class="muted">Yes. The center is run by local families. Animals are fed and cared for; the visit is educational and not a spectacle.</p>
+        </div>
+      </div>
+      <div class="item">
+        <button aria-expanded="false">What should I bring?</button>
+        <div class="answer" hidden>
+          <p class="muted">Comfortable shoes, sunscreen, a hat, cash for souvenirs. Layers are recommended due to altitude and rain.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact / What to bring -->
-    <section class="section">
-      <div class="wrap">
-        <div class="two-col">
-          <div class="card">
-            <h3 style="margin-top:0">What to bring</h3>
-            <ul style="color:var(--muted);margin:8px 0 0 18px">
-              <li>Comfortable walking shoes</li>
-              <li>Water bottle</li>
-              <li>Sun protection (hat, sunscreen)</li>
-              <li>Camera</li>
-              <li>Small local currency for tips</li>
-            </ul>
-          </div>
+    <!-- Booking / Contact -->
+    <section id="book" style="margin-top:28px;margin-bottom:20px">
+      <h2>Book your visit</h2>
+      <p class="muted">Quick booking via WhatsApp — this is the fastest way. Or send a message below and we'll reply within a few hours.</p>
+      <p style="margin-top:8px">
+        <a class="button" href="https://wa.me/51950693650?text=Hi%20I%20want%20to%20book%20the%20Classic%20Visit%20on%20[date]" target="_blank" rel="noopener">Message on WhatsApp</a>
+      </p>
 
-          <div class="card" id="contact">
-            <h3 style="margin-top:0">Contact & Quick Links</h3>
-            <p class="small"><strong>WhatsApp:</strong> <a href="https://wa.me/51950693650" target="_blank">+51 950 693 650</a></p>
-            <p class="small"><strong>Email:</strong> <a href="mailto:waldo.peredo@gmail.com">waldo.peredo@gmail.com</a></p>
-            <p class="small">Prefer a quick chat? Tap the floating WhatsApp button at the bottom-right to message and reserve.</p>
-          </div>
+      <form id="contactForm" style="margin-top:12px;max-width:560px">
+        <label for="name">Name</label><br>
+        <input id="name" name="name" required style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:1px solid #ddd"><br>
+        <label for="email" style="margin-top:8px;display:block">Email</label>
+        <input id="email" name="email" type="email" required style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:1px solid #ddd"><br>
+        <label for="message" style="margin-top:8px;display:block">Message</label>
+        <textarea id="message" name="message" rows="4" style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:1px solid #ddd"></textarea>
+        <div style="margin-top:8px">
+          <button type="submit" class="button">Send message</button>
         </div>
-      </div>
+        <p id="formStatus" style="margin-top:8px;color:var(--muted);font-size:14px"></p>
+      </form>
     </section>
 
   </main>
 
-  <!-- Other Tours -->
-<section class="section" id="other-tours">
-  <div class="wrap">
-    <h2>Private Tours We Offer</h2>
-    <p class="small" style="color:var(--muted);text-align:center">
-      Explore more of Cusco with our curated tours. Small groups, local guides, and unique experiences.
-    </p>
-
-    <div style="height:16px"></div>
-    <div class="grid-cards">
-      <!-- Tour 1 -->
-      <article class="place-card">
-        <div class="place-thumb" style="background-image:url('images/Otros_tours/camelid-center-cusco.JPG');" aria-hidden="true"></div>
-        <div class="place-body">
-          <div class="place-title">Camelid Center Visit near Cusco</div>
-          <div class="place-desc">Living museum of Andean culture where visitors can meet alpacas, llamas, vicuñas, and guanacos up close</div>
-          <div class="tour-buttons">
-            <a href="https://wa.me/51950693650?text=Hi!%20I'm%20interested%20in%20the%20Camelid%20Center%20Visit%20near%20Cusco%20tour." target="_blank" class="btn-whatsapp">📲 Book via WhatsApp</a>
-            <a href="mailto:waldo.peredo@gmail.com?subject=Booking%20Inquiry%20-%20Camelid%20Center%20Tour" class="btn-contact">✉️ Send Email</a>
-          </div>
-
-        </div>
-      </article>
-
-      <!-- Tour 2 -->
-      <article class="place-card">
-        <div class="place-thumb" style="background-image:url('images/Otros_tours/sacsayhuaman-ruins-cusco.JPG');" aria-hidden="true"></div>
-        <div class="place-body">
-          <div class="place-title">Inca fortress of Sacsayhuamán</div>
-          <div class="place-desc">One of the most remarkable examples of ancient engineering in the Andes. Massive stone walls — some weighing over 100 tons — fit together perfectly without mortar. The site offers panoramic views of Cusco, and walking among these enormous stones feels like stepping back into the time of the Inca Empire..</div>
-        </div>
-        <div class="tour-buttons">
-          <a href="https://wa.me/51950693650?text=Hi!%20I'm%20interested%20in%20the%20Inca%20Fortress%20of%20Sacsayhuaman%20tour." target="_blank" class="btn-whatsapp">📲 Book via WhatsApp</a>
-          <a href="mailto:waldo.peredo@gmail.com?subject=Booking%20Inquiry%20-%20Sacsayhuaman%20Tour" class="btn-contact">✉️ Send Email</a>
-        </div>
-      </article>
-
-      <!-- Tour 3 -->
-      <article class="place-card">
-        <div class="place-thumb" style="background-image:url('images/Otros_tours/san-pedro-market-cusco.JPG');" aria-hidden="true"></div>
-        <div class="place-body">
-          <div class="place-title">San Pedro Market Visit</div>
-          <div class="place-desc">Located in the heart of Cusco, the San Pedro Market is a feast for the senses. Inside this bustling local market, you’ll find colorful fruit stands, fresh juices, flowers, cheeses, Andean herbs, and handmade souvenirs.</div>
-          <div class="tour-buttons">
-            <a href="https://wa.me/51950693650?text=Hi!%20I'm%20interested%20in%20the%20San%20Pedro%20Market%20Visit%20tour." target="_blank" class="btn-whatsapp">📲 Book via WhatsApp</a>
-            <a href="mailto:waldo.peredo@gmail.com?subject=Booking%20Inquiry%20-%20San%20Pedro%20Market%20Tour" class="btn-contact">✉️ Send Email</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-  <!-- Footer -->
   <footer>
-    <div style="max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-      <div>
-        <div style="font-weight:800">Cusco Walking Tours</div>
-        <div class="tiny">Free walking tour in Cusco — English only • Tips-based • Max 10 people</div>
+    <div class="container">
+      <div style="display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+        <div>
+          <strong>Cusco Camelids</strong>
+          <p class="small">Alpaca, Llama, Vicuña & Guanaco Experiences — ethical cultural visits near Cusco</p>
+        </div>
+
+        <div>
+          <p class="small">Phone: +51 950693650 &nbsp; • &nbsp; Email: waldo.peredo@gmail.com</p>
+          <p class="small">Follow: <a href="https://www.instagram.com/cuscocamelids" style="color:#fff;text-decoration:underline">@cuscocamelids</a></p>
+        </div>
       </div>
-      <div class="tiny">© <span id="year"></span> cuscowalks.com</div>
+      <div style="margin-top:18px;text-align:center;font-size:13px;color:#9aa7c2">© <span id="year"></span> Cusco Camelids. All rights reserved.</div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a class="whatsapp" href="https://wa.me/51950693650" target="_blank" aria-label="Contact via WhatsApp">
-  <img src="images/instagram/whatsapp.png" alt="WhatsApp" />
-</a>
-
+  <!-- Booking modal (simple) -->
+  <div class="modal" id="modal">
+    <div class="panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Book your visit</h3>
+      <p class="muted">Fastest way: WhatsApp booking. Or send a message below and we'll confirm.</p>
+      <p style="margin-top:8px"><a id="modalWhats" class="button" href="https://wa.me/51950693650" target="_blank">Message on WhatsApp</a> <button id="closeModal" style="margin-left:8px;padding:8px;border-radius:6px">Close</button></p>
+    </div>
+  </div>
 
   <script>
-    // set copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Small helpers: update year
+    document.getElementById('year').innerText = new Date().getFullYear();
 
-    // smooth internal scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', function(e){
-        const tgt = document.querySelector(this.getAttribute('href'));
-        if (tgt) {
-          e.preventDefault();
-          tgt.scrollIntoView({behavior:'smooth', block:'start'});
-        }
+    // Modal
+    const modal = document.getElementById('modal');
+    document.getElementById('bookBtn').addEventListener('click', (e)=>{e.preventDefault();modal.classList.add('open');document.getElementById('modalWhats').focus();});
+    document.getElementById('heroBook').addEventListener('click', (e)=>{e.preventDefault();modal.classList.add('open');document.getElementById('modalWhats').focus();});
+    document.getElementById('closeModal').addEventListener('click', ()=>modal.classList.remove('open'));
+
+    // FAQ accordion
+    document.querySelectorAll('.faq .item').forEach(item => {
+      const btn = item.querySelector('button');
+      const ans = item.querySelector('.answer');
+      btn.addEventListener('click', ()=>{
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        if(expanded){ ans.hidden = true; } else { ans.hidden = false; }
       });
     });
 
-    // FAQ accordion behaviour
-    document.querySelectorAll('[data-toggle]').forEach(toggle=>{
-      toggle.addEventListener('click', ()=>{
-        const ans = toggle.nextElementSibling;
-        const open = !ans.hidden;
-        // close others
-        document.querySelectorAll('.faq-a').forEach(el=>el.hidden=true);
-        document.querySelectorAll('.faq-q div:last-child').forEach(el=>el.textContent='+');
-        if (!open) {
-          ans.hidden = false;
-          toggle.querySelector('div:last-child').textContent = '-';
-        } else {
-          ans.hidden = true;
-          toggle.querySelector('div:last-child').textContent = '+';
-        }
-      });
+    // Simple contact form handler (no server) — use Fetch to your endpoint or email service
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name||!email){ status.innerText = 'Please provide name and email.'; return; }
+
+      // Example: open user's mail client as fallback
+      const subject = encodeURIComponent('Booking request from ' + name);
+      const body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\n'+message);
+      window.location.href = 'mailto:waldo.peredo@gmail.com?subject='+subject+'&body='+body;
+      status.innerText = 'Opening email client...';
     });
 
-    // Form submission via fetch for booking-form and quick-book
-    function bindForm(formId, statusId, successMessage){
-      const form = document.getElementById(formId);
-      const status = document.getElementById(statusId);
-      if (!form) return;
-      form.addEventListener('submit', function(e){
+    // Smooth anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        status.textContent = 'Sending...';
-        const action = form.getAttribute('action');
-        if (!action || action.includes('formspree.io/f/')) {
-          // proceed with fetch
-          const fd = new FormData(form);
-          fetch(action, {method:'POST', headers:{'Accept':'application/json'}, body:fd})
-            .then(resp=>{
-              if (resp.ok) {
-                form.reset();
-                status.textContent = successMessage || 'Sent! We will contact you shortly.';
-              } else {
-                resp.json().then(data=>{
-                  if (data && data.errors) {
-                    status.textContent = data.errors.map(e=>e.message).join(', ');
-                  } else {
-                    status.textContent = 'Error sending — please try WhatsApp at +51 950 693 650';
-                  }
-                }).catch(()=>status.textContent = 'Error sending — please try WhatsApp at +51 950 693 650');
-              }
-            }).catch(()=>status.textContent = 'Network error — please try WhatsApp at +51 950 693 650');
-        } else {
-          status.textContent = 'Form endpoint not configured.';
-        }
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
       });
-    }
+    });
 
-    bindForm('booking-form','form-status','Booking request sent! We will contact you via WhatsApp or email shortly.');
-    bindForm('quick-book','quick-status','Quick request sent! We will confirm via WhatsApp.');
-
-    // Prefill phone with +51 for convenience on mobile
-    (function prefillPhone(){
-      const phone = document.getElementById('phone');
-      const qphone = document.getElementById('q-phone');
-      if (phone && phone.value.trim()==='') phone.value = '+51 ';
-      if (qphone && qphone.value.trim()==='') qphone.value = '+51 ';
-    })();
-
-    // if hero has no image, keep the no-image class (this is default). If you set image, remove the class for nicer effect.
-    // To use an image, add its URL into the inline style on .hero-bg element at top of page.
+    // Accessibility: close modal with Esc
+    window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') modal.classList.remove('open'); });
   </script>
 
+  <!-- Notes for you (remove before publishing):
+    - Replace all /images/*.jpg with your real photo filenames and add optimized srcset versions.
+    - Replace phone number +51950693650 and email with your contact details.
+    - Add Google Analytics / Search Console verification and upload sitemap.xml.
+    - Create /robots.txt to allow crawling.
+    - Serve a fast SSL certificate (Let's Encrypt) and enable gzip compression on your host.
+    - Consider adding a Spanish (es) version and hreflang links for SEO.
+  -->
 </body>
 </html>

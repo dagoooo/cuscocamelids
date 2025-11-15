@@ -1,159 +1,37 @@
-/* ---------- Painterly Theme Colors ---------- */
-:root{
-    --primary-dark: #0b3b66;       /* deep Andean blue */
-    --primary-light: #1b558a;      /* lighter blue */
-    --accent-gold: #ffd24a;        /* gold / warm highlights */
-    --accent-terra: #e07b39;       /* terracotta / warm earthy tones */
-    --bg-light: #fefcf7;           /* creamy background */
-    --muted: #6b6b6b;              /* soft text */
-    --card-bg: #fffaf3;            /* soft card background */
-    --shadow: rgba(11,59,102,0.12);/* subtle shadow */
-    --radius: 16px;
-}
+    :root{--accent:#7b3f00;--muted:#6b6b6b;--bg:#fff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#111;margin:0;background:var(--bg)}
+    header{background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.1)),url('/images/galerria_fotos/alpaca-vicugna-pacos-4024996_1280.jpg') center/cover no-repeat;color:#fff;padding:56px 16px}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
+    nav{margin-left:auto}
+    .nav-links{display:flex;gap:12px;align-items:center}
+    a.button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+    h1{font-size:30px;margin:12px 0}
+    p.lead{font-size:18px;color:#f2efe9;max-width:760px}
 
-/* ---------- Base Styles ---------- */
-*{box-sizing:border-box;}
-html, body{height:100%; margin:0; font-family: 'Merriweather', serif; color:#222; background:var(--bg-light);}
-a{color:inherit;text-decoration:none;}
-img{display:block;max-width:100%;border-radius:8px;}
-.wrap{max-width:1200px;margin:0 auto;padding:24px;}
+    /* Tour cards */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:24px}
+    .card{background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.06);overflow:hidden}
+    .card img{width:100%;height:200px;object-fit:cover;display:block}
+    .card .card-body{padding:12px}
+    .muted{color:var(--muted)}
 
-/* ---------- Header ---------- */
-header{
-    position:sticky; top:0; z-index:999;
-    background: linear-gradient(180deg, rgba(11,59,102,0.95), rgba(11,59,102,0.8));
-    backdrop-filter: blur(6px);
-    border-bottom: 2px solid var(--accent-gold);
-}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;color:#fff; gap: 16px;}
-.brand{display:flex;gap:12px;align-items:center;}
-.logo{
-    width:60px;height:60px;
-    background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
-    display:grid; place-items:center;
-    font-weight:900;color:var(--accent-gold);
-    font-size:20px;
-    border-radius:50%;
-    box-shadow:0 8px 24px var(--shadow);
-}
-nav ul{display:flex;gap:16px;align-items:center;margin:0;padding:0;list-style:none;}
-nav a{padding:8px 12px;font-weight:700; font-family: 'Montserrat', sans-serif; border-radius:12px; transition: all 0.3s ease;}
-nav a:hover{background:rgba(255,255,255,0.12); transform: translateY(-2px);}
-.cta{background:linear-gradient(90deg,var(--accent-gold), var(--accent-terra)); color:var(--primary-dark); padding:12px 18px; font-weight:800; box-shadow:0 6px 20px var(--shadow);}
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
 
-/* ---------- Hero Section ---------- */
-.hero{
-    position:relative; min-height:520px; display:flex; align-items:center; overflow:hidden;
-    background: url('../images/galerria_fotos/wallpaper.JPG') center/cover no-repeat;
-    border-bottom: 8px solid var(--accent-gold);
-}
-.hero::after{
-    content:""; position:absolute; top:0; left:0; width:100%; height:100%;
-    background: rgba(0,0,0,0.35); mix-blend-mode:multiply;
-}
-.hero-content{position:relative; z-index:2; color:#fff; padding:48px; max-width:980px;}
-h1{font-family:'Playfair Display', serif; font-size:44px; color: var(--accent-gold); text-shadow: 2px 4px 12px rgba(0,0,0,0.3);}
-p.lead{font-size:18px; color:#f8f4ed; line-height:1.6; margin:16px 0;}
-.eyebrow{font-weight:700; background: rgba(255,255,255,0.1); padding:6px 14px; border-radius:999px; color:var(--accent-gold); font-size:14px;}
-.hero-ctas{display:flex; gap:14px; flex-wrap:wrap;}
-.btn-primary{background: linear-gradient(135deg, var(--accent-gold), var(--accent-terra)); color:#111; font-weight:800; padding:14px 20px; border-radius:14px; box-shadow: 0 12px 28px var(--shadow); transition: all 0.3s ease;}
-.btn-primary:hover{transform: translateY(-3px) scale(1.02);}
-.btn-outline{border:2px solid rgba(255,255,255,0.18); padding:12px 18px; border-radius:14px; color:#fff; background:transparent; transition: all 0.3s ease;}
-.btn-outline:hover{background:rgba(255,255,255,0.1); transform: translateY(-2px);}
+    footer{background:#0f1724;color:#fff;padding:28px 0;margin-top:40px}
+    .small{font-size:13px;color:#bec7d8}
 
-/* ---------- Sections ---------- */
-.section{padding:60px 24px; position:relative;}
-.card{background:var(--card-bg); border-radius:var(--radius); padding:20px; box-shadow:0 12px 32px var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease;}
-.card:hover{transform: translateY(-4px); box-shadow: 0 20px 48px var(--shadow);}
-h2{font-family:'Playfair Display', serif; font-size:28px; color:var(--primary-dark); margin-bottom:12px; text-align:center;}
+    /* Booking modal */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.5)}
+    .modal.open{display:flex}
+    .modal .panel{background:#fff;padding:18px;border-radius:10px;width:100%;max-width:520px}
 
-.card {
-  margin: 0 auto 16px; /* top:0, left/right:auto (centers it), bottom:16px */
-  width: fit-content;  /* shrink to fit the content */
-}
+    /* FAQ */
+    .faq .item{border-bottom:1px solid #eee;padding:12px 0}
+    .faq button{width:100%;text-align:left;border:0;background:none;padding:0;font-size:16px}
 
-
-/* ---------- Route / Other Tours cards ---------- */
-.grid-cards{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
-.place-card{border-radius:var(--radius); overflow:hidden; background: var(--card-bg); display:flex; flex-direction:column; box-shadow:0 12px 36px var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease;}
-.place-card:hover{transform:translateY(-6px) rotate(-0.5deg); box-shadow:0 24px 48px var(--shadow);}
-.place-thumb{height:180px; background:#eee center/cover no-repeat; border-bottom: 4px solid var(--accent-gold);}
-.place-title{font-weight:900; color:var(--primary-dark); margin:8px 0 4px 0; font-size:18px;}
-.place-desc{font-size:14px; color:var(--muted); line-height:1.5; font-style:italic;}
-
-.tour-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-
-.btn-whatsapp, .btn-contact {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  transition: background 0.3s ease;
-}
-
-.btn-whatsapp {
-  background-color: #25D366;
-  color: white;
-}
-
-.btn-whatsapp:hover {
-  background-color: #1EBE57;
-}
-
-.btn-contact {
-  background-color: #0073e6;
-  color: white;
-}
-
-.btn-contact:hover {
-  background-color: #005bb5;
-}
-
-/* Optional: make buttons full width on mobile */
-@media (max-width: 600px) {
-  .tour-buttons {
-    flex-direction: column;
-  }
-  .btn-whatsapp, .btn-contact {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-
-/* ---------- Reviews ---------- */
-.reviews-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
-.review-card{padding:20px; border-radius:var(--radius); background:var(--card-bg); box-shadow:0 12px 36px var(--shadow); font-style:italic; transition: transform 0.3s ease;}
-.review-card:hover{transform: translateY(-4px) rotate(0.3deg);}
-
-/* ---------- Booking Form ---------- */
-input, select, textarea{padding:14px; border-radius:12px; border:1px solid rgba(0,0,0,0.1); font-size:15px; transition: all 0.3s ease;}
-input:focus, select:focus, textarea:focus{border-color:var(--accent-terra); box-shadow:0 4px 12px rgba(224,123,57,0.3); outline:none;}
-.submit-btn{background:linear-gradient(135deg,var(--primary-light),var(--primary-dark)); color:#fff; font-weight:800; padding:14px; border-radius:14px; cursor:pointer; transition: all 0.3s ease;}
-.submit-btn:hover{transform: translateY(-2px) scale(1.02);}
-
-/* ---------- FAQ ---------- */
-.faq-item{border-bottom:1px dashed rgba(0,0,0,0.08); padding:16px 0;}
-.faq-q{display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-weight:700;}
-.faq-a{margin-top:10px; color:var(--muted); font-style:italic;}
-
-/* ---------- Footer ---------- */
-footer{background:linear-gradient(90deg,var(--primary-dark),var(--primary-light)); color:#fff; padding:36px 24px; border-radius:16px; margin:24px 0; text-align:center; font-family:'Montserrat', sans-serif;}
-footer .tiny{color:rgba(255,255,255,0.85); font-size:13px;}
-
-/* ---------- Floating WhatsApp ---------- */
-.whatsapp{width:90px; height:90px; border-radius:50%; bottom:30px; right:30px; position:fixed; cursor:pointer; z-index:9999; transition: all 0.3s ease;}
-.whatsapp img{width:100%; height:100%; border-radius:50%;}
-.whatsapp:hover{transform: scale(1.1); box-shadow:0 8px 24px var(--shadow);}
-
-/* ---------- Responsive ---------- */
-@media(max-width:1000px){.grid-cards,.reviews-grid{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:600px){.grid-cards,.reviews-grid{grid-template-columns:1fr;} h1{font-size:32px;}}
-
+    @media (min-width:768px){h1{font-size:42px}} 
